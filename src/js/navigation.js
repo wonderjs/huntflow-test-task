@@ -1,3 +1,5 @@
+const DESKTOP_BREAKPOINT = 1280;
+
 const MenuButtonAriaLabel = {
   OPEN: 'Открыть меню',
   CLOSE: 'Закрыть меню',
@@ -45,5 +47,14 @@ menuButton.addEventListener('click', () => {
     setNavigationModalState(!isOpening);
   } else {
     setNavigationModalState(!isModalShown);
+  }
+
+  document.body.classList.toggle('lock-scroll', !isModalShown);
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= DESKTOP_BREAKPOINT) {
+    setNavigationModalState(false);
+    document.body.classList.remove('lock-scroll');
   }
 });

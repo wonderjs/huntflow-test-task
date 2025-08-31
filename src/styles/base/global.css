@@ -33,3 +33,7 @@ h1 {
     font-size: 6rem;
   }
 }
+
+.lock-scroll {
+  overflow: hidden;
+}
