@@ -1,5 +1,7 @@
 # Huntflow Test Task
 
+[👉 Live Demo on GitHub Pages](https://wonderjs.github.io/huntflow-test-task/)
+
 ## About
 This is a test task for Huntflow. The project uses Vite with Vanilla JS, ESLint, and Prettier.
 
