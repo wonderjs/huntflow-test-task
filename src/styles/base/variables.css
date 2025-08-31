@@ -1,0 +1,19 @@
+:root {
+  --font-family:
+    Graphik, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+  --color-white: #fff;
+  --color-black: #1d1d1d;
+  --color-grey-dark: #323235;
+  --color-grey: #999;
+  --color-grey-light: #f4f3eb;
+  --color-green: #16bf54;
+  --color-green-hover: #00a83e;
+  --color-purple: #534bc3;
+  --color-brand: #dcf2ff;
+  --color-yellow: #ffe079;
+  --color-blue: #8fc4ff;
+  --color-shadow: rgba(45, 45, 45, 0.1);
+  --color-border: rgba(1, 1, 1, 0.1);
+}

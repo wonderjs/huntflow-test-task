@@ -1,0 +1,124 @@
+.hero {
+  background:
+    url("/images/hero-bg.svg") top center / 307px 258px no-repeat,
+    linear-gradient(var(--color-brand) 0 679px, var(--color-white) 0);
+
+  @media (--tablet) {
+    background:
+      url("/images/hero-bg.svg") top center / 640px 538px no-repeat,
+      linear-gradient(var(--color-brand) 0 1021px, var(--color-white) 0);
+  }
+
+  @media (--desktop) {
+    background:
+      url("/images/hero-bg.svg") top left calc(50% + 390px) / 780px 656px no-repeat,
+      linear-gradient(var(--color-brand) 0 656px, var(--color-white) 0);
+  }
+}
+
+.hero__content {
+  padding-top: 240px;
+
+  @media (--tablet) {
+    padding-top: 480px;
+  }
+
+  @media (--desktop) {
+    padding-top: 120px;
+  }
+}
+
+.hero__tag-list {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  @media (--tablet) {
+    margin-bottom: 24px;
+  }
+}
+
+.hero__tag {
+  position: relative;
+  margin-right: 7px;
+  display: flex;
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-radius: 3px;
+    inset: 0;
+    transform: translate(5px, 5px);
+  }
+
+  &:first-child::before {
+    background-color: var(--color-yellow);
+  }
+
+  &:not(:first-child)::before {
+    background-color: var(--color-blue);
+  }
+
+  & span {
+    padding: 5px 7px;
+    border: 1px solid var(--color-black);
+    border-radius: 3px;
+    z-index: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+
+    @media (--tablet) {
+      font-size: 22px;
+      line-height: 24px;
+      padding: 6px 12px;
+      border-width: 2px;
+      border-radius: 4px;
+    }
+  }
+
+  @media (--tablet) {
+    margin-right: 13px;
+
+    &::before {
+      transform: translate(7px, 7px);
+    }
+  }
+}
+
+.hero__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 27px;
+  line-height: 1.2;
+
+  @media (--tablet) {
+    margin-bottom: 20px;
+    font-size: 52px;
+    line-height: 1.13;
+  }
+
+  @media (--desktop) {
+    font-size: 60px;
+    max-width: 700px;
+  }
+}
+
+.hero__caption {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+
+  @media (--tablet) {
+    max-width: 540px;
+    margin-bottom: 60px;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+  }
+
+  @media (--desktop) {
+    margin-bottom: 80px;
+  }
+}

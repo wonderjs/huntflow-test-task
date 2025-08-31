@@ -1,0 +1,12 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (--tablet) {
+    width: 740px;
+  }
+
+  @media (--desktop) {
+    width: 1170px;
+  }
+}

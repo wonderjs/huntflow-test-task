@@ -1,0 +1,25 @@
+.button {
+  border-radius: 3px;
+  background: var(--color-black);
+  padding: 8px 24px;
+  color: var(--color-grey-light);
+  line-height: 1;
+
+  &:hover, &:focus-visible {
+    background: var(--color-grey-dark);
+    color: var(--color-white);
+  }
+}
+
+.button[type="button"] {
+  cursor: pointer;
+}
+
+.button--primary {
+  background: var(--color-green);
+  color: var(--color-white);
+
+  &:hover, &:focus-visible  {
+    background: var(--color-green-hover);
+  }
+}
