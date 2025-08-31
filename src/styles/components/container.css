@@ -1,12 +1,13 @@
 .container {
-  width: 320px;
+  padding: 0 20px;
+  max-width: 360px;
   margin: 0 auto;
 
   @media (--tablet) {
-    width: 740px;
+    max-width: 780px;
   }
 
   @media (--desktop) {
-    width: 1170px;
+    max-width: 1210px;
   }
 }

@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   background-color: var(--color-white);
-  height: 64px;
+  height: 6.4rem;
   z-index: 999;
   transition: box-shadow 0.3s ease;
 
@@ -11,7 +11,7 @@
   }
 
   @media (--tablet) {
-    height: 72px;
+    height: 7.2rem;
   }
 }
 
@@ -21,11 +21,11 @@
   grid-auto-flow: column;
   justify-content: space-between;
   align-items: center;
-  gap: 0 20px;
-  padding: 16px 20px;
+  gap: 0 2rem;
+  padding: 1.6rem 2rem;
 
   @media (--tablet) {
-    padding: 14px 24px;
+    padding: 1.4rem 2.4rem;
   }
 }
 

@@ -3,16 +3,16 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
 }
 
 body {
   background-color: var(--color-white);
-  min-width: 320px;
+  min-width: 360px;
   min-height: 100vh;
   color: var(--color-black);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.5;
   font-family: var(--font-family);
-  font-synthesis: none;
 }
